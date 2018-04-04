@@ -16,7 +16,7 @@ var $ = jQuery.noConflict();
 
     var myLatlng = new google.maps.LatLng(contact.lat, contact.lon)
     var mapOptions = {
-      zoom: 12,
+      zoom: 14,
       center: myLatlng,
       mapTypeControlOptions: {
         mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
@@ -36,12 +36,7 @@ var $ = jQuery.noConflict();
     var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      icon: {
-        path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-        scale: 6,
-        strokeWeight: 4,
-        strokeColor: '#2F2911'
-      }
+      icon: 'http://0.0.0.0:8080/assets/img/logo-center.png'
     })
   }
   google.maps.event.addDomListener(window, 'load', initialize)
