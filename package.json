@@ -1,0 +1,26 @@
+{
+  "name": "website-saengerschaft-borussia",
+  "version": "1.0.0",
+  "description": "Mit einem neuen Design von [puredesignThemes](http://www.patrickdavid.it/) holen wir auch den Internetauftritt der S! Borussia in das Jahr 2018!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landgenoot/website-saengerschaft-borussia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landgenoot/website-saengerschaft-borussia/issues"
+  },
+  "homepage": "https://github.com/landgenoot/website-saengerschaft-borussia#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}

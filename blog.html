@@ -146,41 +146,25 @@
                     <ul class="slides">
                         <li style="background-image:url(assets/img/news.jpg)">
                             <div class="container text text-center">
-                                <h1 class="white margin-bottom-small">Blog</h1>
+                                <h1 class="white margin-bottom-small">Veranstaltungen</h1>
                                 <p class="heading white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam aperiam rerum quis atque, illum.</p>
                             </div>
                             <div class="gradient dark"></div>
                         </li>
                         <ol class="breadcrumb">
                             <li><a href="#">Home</a></li>
-                            <li class="active">Blog</li>
+                            <li class="active">Veranstaltungen</li>
                         </ol>
                     </ul>
                 </div>
                 <!--  END Slider  -->
                 <div id="page-wrap" class="content-section fullpage-wrap grey-background">
                     <div class="container">
-                        <div class="col-md-8 padding-leftright-null">
+                        <div class="col-md-12 padding-leftright-null">
                             <!--  News Section  -->
                             <section id="news" class="page">
-                                <div class="news-items equal one-columns">
+                                <div class="news-items equal one-columns" id="events">
                                     <!--  Single News  -->
-                                    <div class="single-news one-item horizontal-news">
-                                        <article>
-                                            <div class="col-md-6 padding-leftright-null">
-                                                <div class="image" style="background-image:url(assets/img/news1.jpg)"></div>
-                                            </div>
-                                            <div class="col-md-6 padding-leftright-null">
-                                                <div class="content">
-                                                    <h3>Free guided tours</h3>
-                                                    <span class="category">Discover</span>
-                                                    <span class="date">12.02.2017</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis. Maxime sapiente, adipisci laborum.</p>
-                                                </div>
-                                            </div>
-                                            <a href="standard-post.html" class="link"></a>
-                                        </article>
-                                    </div>
                                     <!--  END Single News  -->
                                     <div class="single-news one-item horizontal-news">
                                         <article>
@@ -217,95 +201,6 @@
                                 </div>
                             </section>
                             <!--  END News Section  -->
-                        </div>
-                        <!--  Right Sidebar  -->
-                        <div class="col-md-4 text">
-                            <aside class="sidebar">
-                                <div class="widget-wrapper">
-                                    <form class="search-form">
-                                        <div class="form-input">
-                                            <input type="text" placeholder="Search...">
-                                            <span class="form-button">
-                                                <button type="button">
-                                                    <i class="icon ion-ios-search-strong"></i>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="widget-wrapper">
-                                    <h5>About Viride</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, sint?</p>
-                                    <p class="black margin-null">T: <a href="tel:0012345678901">+1 234 5678 901</a><br>
-                                        E: <a href="maito:hello@mail.com">hello@mail.com</a></p>
-                                </div>
-                                <div class="widget-wrapper">
-                                    <h5>Categories</h5>
-                                    <ul class="widget-categories">
-                                        <li><a href="#">Web</a></li>
-                                        <li><a href="#">Office</a></li>
-                                        <li><a href="#">News</a></li>
-                                        <li><a href="#">Awards</a></li>
-                                    </ul>
-                                </div>
-                                <div class="widget-wrapper">
-                                    <h5>Recent Post</h5>
-                                    <ul class="recent-posts">
-                                        <li>
-                                            <img src="assets/img/home-food.jpg" alt="">
-                                            <div class="content">
-                                                <a href="#">
-                                                    <span class="meta">
-                                                        February 12, 2016
-                                                    </span>
-                                                    <p>Post with Sidebar</p>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="assets/img/home-meeting.jpg" alt="">
-                                            <div class="content">
-                                                <a href="#">
-                                                    <span class="meta">
-                                                        February 12, 2016
-                                                    </span>
-                                                    <p>Post with Video</p>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <img src="assets/img/home-news.jpg" alt="">
-                                            <div class="content">
-                                                <a href="#">
-                                                    <span class="meta">
-                                                        February 12, 2016
-                                                    </span>
-                                                    <p>Post with Sidebar</p>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                        <!--  END Right Sidebar  -->
-                        <div class="row margin-leftright-null">
-                            <!--  Navigation  -->
-                            <section id="nav" class="padding-top-null grey-background">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="nav-left">
-                                            <a href="single-blog-style-2.html" class="btn-alt small margin-null"><i class="icon ion-ios-arrow-left"></i><span>Older posts</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <div class="nav-right">
-                                            <a href="#" class="btn-alt small margin-null"><span>Newer posts</span><i class="icon ion-ios-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <!--  END Navigation  -->
                         </div>
                     </div>
                 </div>
@@ -398,5 +293,32 @@
         <script src="assets/js/imagesloaded.min.js"></script>
         <script src="assets/js/pace.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            $.getJSON('http://0.0.0.0:3000/api/events', function(events) {
+                var items = [];
+                $.each(events, function(key, event ) {
+                    items.push( 
+                        '<div class="single-news one-item horizontal-news">' +
+                        '<article>' +
+                        '<div class="col-md-4 padding-leftright-null">' +
+                        '<div class="image" style="background-image:url(data:image/jpeg;base64,' + event.picture + ')"></div>' +
+                        '</div>' +
+                        '<div class="col-md-8 padding-leftright-null">' +
+                        '<div class="content">' +
+                        '<h3>' + event.name + '</h3>' +
+                        '<span class="category">Veranstaltung</span>' +
+                        '<span class="date">' + event.start_time.substring(8, 10) + '-' + event.start_time.substring(5, 7) + '-' + event.start_time.substring(0, 4) + '</span>' +
+                        '<p>' + event.description + '</p>' +
+                        '</div>' +
+                        '</div>' +
+                        '<a href="https://www.facebook.com/events/' + event.id + '" class="link"></a>' +
+                        '</article>' +
+                        '</div>' 
+                    );
+                });
+                
+                $('#events').html(items.join(''))
+            });
+        </script>
     </body>
 </html>
