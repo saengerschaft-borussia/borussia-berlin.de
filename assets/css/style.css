@@ -7128,3 +7128,24 @@ button.mfp-close {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
+
+
+
+  .band {
+    text-align: center;
+    position: relative;
+    line-height: 100px;
+    background: #fff;
+    height: 100px;
+    width: 300px;
+  }
+  
+  .band:after {
+    background: linear-gradient(to bottom, #009cd5 33%,#ffffff 33%, #ffffff 66%, #ec9032 66%);
+    position: absolute;
+    content: '';
+    height: 18px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
