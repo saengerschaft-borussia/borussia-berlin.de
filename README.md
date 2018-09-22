@@ -1,3 +1,5 @@
-# Neugestaltung des Internetauftritts der Sängerschaft Borussia
+# Website Sängerschaft Borussia
 
-Mit einem neuen Design von [puredesignThemes](http://www.patrickdavid.it/) holen wir auch den Internetauftritt der S! Borussia in das Jahr 2018!
+Static website for a student fraternity based in Berlin. Basically only using Github as a free hosting provider.
+
+![screenshot](https://i.imgur.com/tYrqWeR.jpg)
