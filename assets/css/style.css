@@ -566,18 +566,14 @@ p {
       max-width: none;
       padding: 50px 0;
       display: block; }
-      p.heading.line:before {
+      p.heading.line:after {
         position: absolute;
         content: "";
-        left: 50%;
-        top: 0;
         bottom: 0;
-        width: 1px;
-        height: 100%;
+        left: 25%;
+        height: 1px;
+        width: 50%;
         background-color: #e0cdba;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
         z-index: -1; }
   p b, p strong {
     font-weight: bold;
