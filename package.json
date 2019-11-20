@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/landgenoot/website-saengerschaft-borussia#readme",
   "dependencies": {
-    "angular": "^1.6.9",
+    "angular": "^1.7.9",
     "koa": "^2.5.0",
     "koa-router": "^7.4.0",
     "request": "^2.85.0",
