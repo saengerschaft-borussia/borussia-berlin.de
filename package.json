@@ -20,7 +20,7 @@
     "angular": "^1.6.9",
     "koa": "^2.5.0",
     "koa-router": "^7.4.0",
-    "request": "^2.85.0",
+    "request": "^2.88.2",
     "request-promise": "^4.2.2"
   }
 }
